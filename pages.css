@@ -1,0 +1,124 @@
+/* Basic styling for the plant detail pages */
+body {
+    font-family: serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.6rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Main Content */
+main {
+    padding: 20px 50px;
+}
+
+/* Plant Description Section */
+#plant-description {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+#plant-description h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#plant-description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#plant-description h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+#plant-description p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+#plant-description ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#plant-description ul li {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Price */
+#plant-description h3:last-of-type {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+/* Button */
+#plant-description .button {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#plant-description .button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}

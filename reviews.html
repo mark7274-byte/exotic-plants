@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews - PlantLab</title>
+  <link rel="stylesheet" href="reviews.css">
+  <link rel="icon" href="298763887_483454653616329_6508663824388365279_n.jpg" type="image/png">
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="care.html">Plant Care</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content Section for Reviews -->
+  <main>
+    <section id="intro">
+      <h1>Customer Reviews</h1>
+      <p>See what our customers say about our exotic plants and their experiences with our products and service!</p>
+    </section>
+
+    <!-- Reviews Section -->
+    <section>
+      <h2>What Our Customers Say</h2>
+      <div class="plant-gallery">
+        <!-- Review 1 -->
+        <div class="plant-item">
+          <h3>John Doe - 5 Stars</h3>
+          <p>"I recently purchased a Monstera Deliciosa and it arrived in perfect condition. It has been thriving in my home. The care tips provided were incredibly helpful. Highly recommend!"</p>
+        </div>
+        
+        <!-- Review 2 -->
+        <div class="plant-item">
+          <h3>Jane Smith - 4 Stars</h3>
+          <p>"Great service and fast shipping. The plant I received looks beautiful, but I had to wait a bit longer than expected for delivery. Still, a great purchase overall."</p>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="plant-item">
+          <h3>Michael Brown - 5 Stars</h3>
+          <p>"I am a plant enthusiast, and I am extremely pleased with the quality of the cactus I bought. It was packed carefully and arrived in perfect shape. Will be buying more from here!"</p>
+        </div>
+        
+        <!-- Review 4 -->
+        <div class="plant-item">
+          <h3>Emily Davis - 4 Stars</h3>
+          <p>"I love the exotic plants I bought from PlantLab. The only thing I wish for is more detailed care instructions, but overall, the plants are amazing and healthy!"</p>
+        </div>
+        
+        <!-- Review 5 -->
+        <div class="plant-item">
+          <h3>William Clark - 5 Stars</h3>
+          <p>"The Ficus Lyrata I ordered looks incredible in my living room. It was delivered on time and with great care. I'm so happy with my purchase!"</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Write a Review</h2>
+      <p>We would love to hear about your experience! Leave a review for your favorite plant and help others make informed choices.</p>
+      <form action="submit_review.html" method="post">
+        <textarea name="review" rows="5" placeholder="Write your review here..." required></textarea>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit" class="button">Submit Review</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 PlantLab. All rights reserved.</p>
+  </footer>
+
+</body>
+<script src="js.js"></script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog - PlantLab</title>
+  <link rel="stylesheet" href="catalog.css">
+  <link rel="icon" href="298763887_483454653616329_6508663824388365279_n.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalog.html">Catalog</a></li>
+            <li><a href="care.html">Plant Care</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+  <main>
+    <section id="catalog">
+      <h1>Our Exotic Plants</h1>
+
+      <div class="sort-container">
+        <label for="sort-options">Sort by:</label>
+        <select id="sort-options">
+          <option value="name-asc">By name (A-Z)</option>
+          <option value="name-desc">By name (Z-A)</option>
+          <option value="price-asc">By price (lower - higher)</option>
+          <option value="price-desc">By price (higher - lower)</option>
+        </select>
+      </div>
+
+      <!-- Plant Cards Section -->
+      <div class="plant-gallery" id="plant-gallery">
+     
+        <div class="plant-card" data-name="Ficus Lyrata" data-price="25">
+          <img src="Starr_031108-0130_Ficus_lyrata.jpg" alt="Ficus Lyrata">
+          <h3>Ficus Lyrata</h3>
+          <p>Price: $25.00</p>
+          <a href="Ficus Lyrata.html" class="btn">View More</a>
+        </div>
+
+        <div class="plant-card" data-name="Monstera Deliciosa" data-price="35">
+          <img src="Monstera_deliciosa2.jpg" alt="Monstera Deliciosa">
+          <h3>Monstera Deliciosa</h3>
+          <p>Price: $35.00</p>
+          <a href="Monstera Deliciosa.html" class="btn">View More</a>
+        </div>
+
+        <div class="plant-card" data-name="Cereus Forbesii Spiralis" data-price="40">
+          <img src="Spiral-Cactus-Cereus-forbesii-spiralis-2-Gallon_2_1dac1905-65aa-4023-a67f-cdb468348b08_1800x1800.webp" alt="Cereus Forbesii Spiralis">
+          <h3>Cereus Forbesii Spiralis</h3>
+          <p>Price: $40.00</p>
+          <a href="Cereus Forbesii Siralis.html" class="btn">View More</a>
+        </div>
+        <div class="plant-card" data-name="Abutilon 'Victorian Lady'" data-price="15">
+            <img src="abutilon_victorian_lady_1.jpg" alt="Cereus Forbesii Spiralis">
+            <h3>Abutilon 'Victorian Lady'</h3>
+            <p>Price: $15.00</p>
+            <a href="Abutilon 'Victorian Lady'.html" class="btn">View More</a>
+          </div>
+        <!-- Add more plant cards as needed -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 PlantLab. All rights reserved.</p>
+  </footer>
+
+</body>
+<script src="js.js"></script>
+</html>
