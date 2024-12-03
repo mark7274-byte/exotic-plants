@@ -7,9 +7,12 @@
 
 body {
     font-family: serif, sans-serif;
-    background-color: #f4f4f4;
     color: #333;
     cursor: default;
+    background-image:url(peakpx.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 img {
@@ -113,7 +116,12 @@ form input:focus, form textarea:focus {
     border-color: #4CAF50;
     outline: none;
 }
-
+#subm {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 550px;
+    margin: 20px auto;
+}
 button {
     background-color: #4CAF50;
     color: white;
@@ -156,7 +164,12 @@ footer p {
         align-items: center;
         padding: 0;
     }
-
+    h2 {
+        background-color: #fff;
+        max-width: 300px;
+        margin: 20px auto;
+        border-radius: 10px;
+        padding: 10px 0;}
     nav ul li {
         margin: 10px 0;
     }

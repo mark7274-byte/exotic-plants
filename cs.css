@@ -9,7 +9,10 @@
     background-color: #f4f4f4;
     color: #333;
     cursor: default;
-    
+    background-image:url(peakpx.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   img {
     max-width: 100%;
@@ -71,6 +74,19 @@
   h1, h2 {
     color: #4CAF50;
   }
+  h2 {
+    background-color: #fff;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px 0;
+  }
+  #ask {
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 20px auto;
+  }
   .plant-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -115,4 +131,4 @@
     bottom: 0;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
-  }
+  } 
