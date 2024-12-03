@@ -81,6 +81,7 @@ h1, h2 {
     color: #4CAF50;
 }
 
+/* Form Styling */
 form {
     background-color: #ffffff;
     border-radius: 10px;
@@ -139,4 +140,74 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+/* Mobile Adaptation (Max width 600px) */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        padding: 1rem;
+    }
+
+    /* Navigation - stack items vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font for better fit */
+    }
+
+    /* Intro Section */
+    #intro {
+        padding: 15px;
+        max-width: 90%; /* Makes intro section take up more space on mobile */
+        margin: 20px auto;
+    }
+
+    #intro h1 {
+        font-size: 1.6rem; /* Adjusted heading size */
+    }
+
+    #intro p {
+        font-size: 1.2rem; /* Adjusted paragraph size */
+    }
+
+    /* Form Section */
+    form {
+        padding: 1rem;
+        max-width: 90%; /* Form takes more space on mobile */
+    }
+
+    form label {
+        font-size: 1rem; /* Adjusted font size for labels */
+    }
+
+    form input, form textarea {
+        padding: 10px; /* Adjusted padding for inputs */
+        font-size: 0.9rem; /* Reduced font size for inputs */
+    }
+
+    /* Button */
+    button {
+        padding: 0.6rem 1.2rem; /* Smaller button padding */
+        font-size: 0.9rem; /* Smaller button text */
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Smaller footer text */
+    }
+
 }

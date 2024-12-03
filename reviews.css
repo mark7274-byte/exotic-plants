@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     background-color: #f4f4f4;
     color: #333;
     cursor: default;
@@ -81,23 +81,50 @@ h1, h2 {
     color: #4CAF50;
 }
 
+/* Plant Gallery */
 .plant-gallery {
     display: flex;
-    flex-direction: column; /* Changes from row to column to stack items vertically */
+    flex-direction: row; /* Default to row layout for desktop */
     gap: 2rem;
-    justify-content: flex-start; /* Ensures the cards align from the top */
-    align-items: center; /* Centers the items horizontally */
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for responsive layout */
 }
 
+/* Adjusting plant items to stay same size */
 .plant-item {
     background-color: #f4f4f4;
     padding: 1rem;
     border-radius: 8px;
     text-align: center;
     width: 100%;
-    max-width: 600px; /* Control the max-width for the cards */
+    max-width: 300px; /* Limit the width to keep consistency */
+    height: 250px; /* Fixed height for consistency */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+    display: flex;
+    flex-direction: column; /* Flexbox to ensure content is centered vertically */
+    justify-content: space-between; /* Ensures space is evenly distributed within card */
+    overflow: hidden; /* Prevents content from overflowing the card */
+}
+
+.plant-item img {
+    height: 200px; /* Fixed image height */
+    object-fit: cover; /* Ensures image maintains aspect ratio and fills the space */
+    border-radius: 8px;
+}
+
+.plant-item h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #4CAF50;
+}
+
+.plant-item p {
+    font-size: 1rem;
+    color: #555;
+    flex-grow: 1; /* Makes sure the description area takes up available space */
+    margin-bottom: 10px;
 }
 
 .button {
@@ -128,4 +155,77 @@ footer {
     bottom: 0;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+
+/* Mobile Adaptation (Max width 600px) */
+@media (max-width: 600px) {
+
+    /* Header */
+    header {
+        padding: 1rem;
+    }
+
+    /* Navigation - stack items vertically */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px; /* Slightly smaller font for better fit */
+    }
+
+    /* Intro Section */
+    #intro {
+        padding: 15px;
+        max-width: 90%; /* Makes intro section take up more space on mobile */
+        margin: 20px auto;
+    }
+
+    #intro h1 {
+        font-size: 1.6rem; /* Adjusted heading size */
+    }
+
+    #intro p {
+        font-size: 1.2rem; /* Adjusted paragraph size */
+    }
+
+    /* Plant Gallery - Stack items vertically */
+    .plant-gallery {
+        flex-direction: column; /* Change to column layout for mobile */
+        gap: 1.5rem; /* Reduced gap for better fit */
+        justify-content: center;
+        align-items: center; /* Center items on small screens */
+    }
+
+    /* Plant Item */
+    .plant-item {
+        max-width: 90%; /* Make plant items take up more width */
+        margin: 0 auto;
+        height: auto; /* Allow auto height on mobile for better fitting */
+    }
+
+    .plant-item img {
+        height: 180px; /* Adjust image height for mobile */
+    }
+
+    /* Button */
+    .button {
+        padding: 0.6rem 1.2rem; /* Smaller button padding */
+    }
+
+    /* Form inputs */
+    form input, form textarea {
+        padding: 8px; /* Reduced padding for form elements */
+    }
+
+    /* Footer */
+    footer {
+        padding: 1rem;
+    }
 }

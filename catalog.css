@@ -1,117 +1,207 @@
 /* Basic styling for catalog page */
 body {
-    font-family: serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-  }
-  
+  font-family: serif, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+header {
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.6rem;
+  justify-content: center;
+  overflow: auto;
+  align-items: center;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#catalog {
+  margin: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: #4CAF50;
+}
+
+main {
+  padding: 100px;
+}
+
+.sort-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sort-container label {
+  font-size: 18px;
+}
+
+#sort-options {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.plant-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.plant-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Ensure the card takes full available height */
+}
+
+.plant-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.plant-card h3 {
+  color: #4CAF50;
+  margin-top: 15px;
+}
+
+.plant-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: auto; /* Push the button to the bottom of the card */
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  margin-top: 30px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Mobile Adaptation (Max width 600px) */
+@media (max-width: 600px) {
+
+  /* Header */
   header {
-    position: sticky;
-    z-index: 3;
-    top: 0;
-    background-color: #4CAF50;
-    color: white;
-    padding: 0.6rem;
-    justify-content: center;
-    overflow: auto;
-    align-items: center;
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+      padding: 1rem;
   }
+
+  /* Navigation - stack items vertically */
   nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-inline-start: 0;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
   }
-  
+
   nav ul li {
-    margin: 0 15px;
+      margin: 10px 0;
   }
-  
+
   nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+      font-size: 16px; /* Slightly smaller font for better fit */
   }
-  
+
+  /* Catalog Section */
   #catalog {
-    margin: 30px;
+      margin: 15px;
+      padding: 0 10px;
   }
-  
-  h1 {
-    text-align: center;
-    color: #4CAF50;
-  }
+
+  /* Main Section */
   main {
-    padding: 100px;
+      padding: 50px 15px; /* Reduced padding */
   }
+
+  /* Sort container */
   .sort-container {
-    text-align: center;
-    margin-bottom: 20px;
+      margin-bottom: 10px;
   }
-  
+
   .sort-container label {
-    font-size: 18px;
+      font-size: 16px;
   }
-  
+
   #sort-options {
-    padding: 10px;
-    font-size: 16px;
+      padding: 8px;
+      font-size: 14px;
   }
-  
+
+  /* Plant gallery - stack items vertically */
   .plant-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+      grid-template-columns: 1fr; /* Stack items vertically */
+      gap: 15px;
   }
-  
+
+  /* Plant card */
   .plant-card {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+      padding: 10px;
+      margin: 0 auto;
   }
-  
-  .plant-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
+
   .plant-card h3 {
-    color: #4CAF50;
-    margin-top: 15px;
+      font-size: 1.2rem; /* Smaller font size for plant names */
   }
-  
+
   .plant-card p {
-    font-size: 16px;
-    color: #555;
+      font-size: 14px; /* Smaller font size for description */
   }
-  
+
   .btn {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+      padding: 8px 15px; /* Smaller padding for buttons */
+      font-size: 14px; /* Smaller font size for buttons */
   }
-  
-  .btn:hover {
-    background-color: #45a049;
-  }
-  
+
   footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
-    color: white;
-    margin-top: 30px;
-    border-top-left-radius: 16px;
-    border-top-right-radius: 16px;
+      padding: 1rem;
   }
+
+  footer p {
+      font-size: 0.9rem; /* Smaller footer text */
+  }
+}

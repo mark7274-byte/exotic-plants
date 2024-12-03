@@ -122,3 +122,62 @@ footer {
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
 }
+/* Media Query for Mobile Devices */
+@media (max-width: 600px) {
+    /* Header */
+    header {
+      padding: 0.6rem 0.3rem; /* Reduced padding for smaller screens */
+    }
+  
+    /* Navigation - Stack items vertically */
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin: 10px 0;
+    }
+  
+    nav ul li a {
+      font-size: 16px; /* Slightly smaller font for better fit */
+    }
+  
+    /* Main Content */
+    main {
+      padding: 15px; /* Reduced padding */
+    }
+  
+    /* Plant Description Section */
+    #plant-description {
+      padding: 15px; /* Reduced padding for mobile */
+      max-width: 90%; /* Adjusted for mobile screen width */
+      margin: 20px auto;
+    }
+  
+    #plant-description h2 {
+      font-size: 1.6rem; /* Smaller heading size */
+    }
+  
+    #plant-description h3 {
+      font-size: 1.4rem; /* Smaller subtitle size */
+    }
+  
+    #plant-description p {
+      font-size: 1rem; /* Smaller paragraph font size */
+    }
+  
+    #plant-description ul li {
+      font-size: 1rem; /* Smaller font for list items */
+    }
+  
+    /* Button */
+    #plant-description .button {
+      padding: 8px 15px; /* Smaller padding for buttons */
+    }
+  
+    /* Footer */
+    footer {
+      padding: 12px; /* Smaller padding for footer */
+    }
+  }
